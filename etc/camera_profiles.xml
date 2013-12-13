@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+     -->
+<!-- enum for IspType as following:
+     0 : for single port smartsensor
+     1 : for dualport DxO ISP
+     -->
+ <CamProfiles>
+     <BufferReq horstride="16" verstride="16" />
+     <CamConfig camraID="0">
+         <BoardConfig previewbufcnt="9" stillbufcnt="3"
+             videobufcnt="9" maxpreviewwidth="1280"
+             maxpreviewheight="720" horviewangle="50"
+             verviewangle="50" sensorname="s5k4ecgx"
+             isptype="1" productname="GT-I8268"/>
+         <PreviewConfig>
+             <PreviewFormat format="yuv420sp"/>
+             <PreviewFormat format="yuv420p-i420"/>
+             <PreviewFormat format="yuv420p"/>
+             <!--PreviewFormat format="yuv420p"/-->
+             <!--PreviewFormat format="yuv422i-uyvy"/-->
+             <!--PreviewSize width="176" height="144"/-->
+             <!--PreviewSize width="320" height="240"/-->
+             <!--PreviewSize width="352" height="288"/-->
+             <!--PreviewSize width="640" height="480"/-->
+             <!--PreviewSize width="720" height="480"/-->
+         </PreviewConfig>
+         <PictureConfig>
+             <!--PictureFormat format="jpeg"/-->
+             <!--PictureSize size="320x240"/-->
+             <!--PictureSize size="640x480"/-->
+             <!--PictureSize size="2592x1944"/-->
+             <!--PictureSize size="2048x1536"/-->
+         </PictureConfig>
+
+         <VideoRecordingConfig>
+             <!--VideoFormat format="yuv422i-uyvy"/-->
+             <!--VideoFormat format="yuv420p-i420"/-->
+             <!--VideoFormat format="yuv420sp"/-->
+             <!--VideoSize width="176" height="144"/-->
+             <!--VideoSize width="320" height="240"/-->
+         </VideoRecordingConfig>
+     </CamConfig>
+
+     <CamConfig camraID="1">
+         <BoardConfig previewbufcnt="9" stillbufcnt="3"
+             videobufcnt="9" maxpreviewwidth="1920"
+             maxpreviewheight="1080" horviewangle="50"
+             verviewangle="50" sensorname="ov2659"
+             isptype="0" productname="dkb"/>
+         <PreviewConfig>
+             <PreviewFormat format="yuv420sp"/>
+             <PreviewFormat format="yuv420p-i420"/>
+             <PreviewFormat format="yuv420p"/>
+             <PreviewFormat format="yuv422i-uyvy"/>
+             <!--PreviewSize width="176" height="144"/-->
+             <!--PreviewSize width="320" height="240"/-->
+             <!--PreviewSize width="352" height="288"/-->
+             <!--PreviewSize width="640" height="480"/-->
+             <!--PreviewSize width="720" height="480"/-->
+         </PreviewConfig>
+         <PictureConfig>
+             <!--PictureFormat format="jpeg"/-->
+             <!--PictureSize size="320x240"/-->
+             <!--PictureSize size="640x480"/-->
+             <!--PictureSize size="2592x1944"/-->
+             <!--PictureSize size="2048x1536"/-->
+         </PictureConfig>
+
+         <VideoRecordingConfig>
+             <!--VideoFormat format="yuv422i-uyvy"/-->
+             <!--VideoFormat format="yuv420p-i420"/-->
+             <!--VideoFormat format="yuv420sp"/-->
+             <!--VideoSize width="176" height="144"/-->
+             <!--VideoSize width="320" height="240"/-->
+         </VideoRecordingConfig>
+     </CamConfig>
+</CamProfiles>
+
